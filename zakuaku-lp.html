@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>ざくざくアクターズ</title> 
+  <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+</head>
+    <!-- ＃リンクのスムーズスクロール -->
+    <script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 400; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
+<body>
+	
+<div class="wrapper">
+	<div class="top-conteiner">
+		<p class="main-title">ざくざくアクターズ</p>
+		<p class="caption-text">たくさんの仲間と一緒に王国を発展させよう!!</p>
+		<ul class="about-zakuaku">
+			<li><a href="#main-wrapper">ざくざくアクターズってなに？</a></li>
+			<li><a href="#story-container">あらすじ</a></li>
+			<li><a href="#system-container">システム</a></li>
+			<li><a href="#chara-container">キャラクター</a></li>
+		</ul>
+	</div>
+</div>
+<div id="main-wrapper">
+	<h2>ざくざくアクターズとは…</h2>
+	<p class="description">
+		小さな王国の仲間を勧誘して増やしていって、会議をやったり、お店や特産品を開発したりしながら、少しずつ王国を大きくしていくゲームです。
+	</p>
+	<ul class="play-image">
+		<li><img src="./img/zakuzakuact1.s.png" alt="ざくざくアクターズのプレイ画像その1"></li>
+		<li><img src="./img/zakuzakuact2.s.png"　alt="ざくざくアクターズのプレイ画像その2"></li>
+		<li><img src="./img/zakuzakuact4.s.png"　alt="ざくざくアクターズのプレイ画像その3"></li>
+		<li><img src="./img/zakuzakuact5.s.png"　alt="ざくざくアクターズのプレイ画像その4"></li>
+		<li><img src="./img/zakuzakuact6.s.png"　alt="ざくざくアクターズのプレイ画像その5"></li>
+	</ul>
+	<div id="story-container">
+		<div class="container-row">
+			<h2>あらすじ</h2>
+			<div class="common-box">
+				<p class="common-text-l">
+					召喚技術によりさまざまな異世界から召喚された技術や人、物であふれた世界。<br>
+					行きすぎた召喚により増えすぎてしまった別世界からの住人達は“ハグレ”と呼ばれ、差別や迫害の対象となっていた。<br>そんなハグレ達の王国を作るため、主人公の少女“デーリッチ”とその親友“ローズマリー”がハグレの勧誘に向かうところから物語は始まる。
+				</p>
+				<p class="common-img">
+					<img src="./img/story.png" alt="ざくざくアクターズのあらすじ">
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="system-container">
+		<div class="container-row">
+			<h2>システム</h2>
+			<div class="common-box">
+				<p class="common-img">
+					<img src="./img/battle2.jpg" alt="ざくざくアクターズのシステム">
+				</p>
+				<p class="common-text-r">
+					戦闘は8人パーティのうち前衛4人が戦う形式で、戦闘中も前衛・控えの入れ替えが可能。<br>
+					物語が進むにつれて多くのキャラクターを仲間にできる。<br>
+					傷付いた仲間を下がらせる、回復役を温存するなど、キャラクター交代が戦術の肝となる白熱のバトルを楽しめるぞ。
+				</p>	
+			</div>
+			<div class="common-box">
+				<p class="common-text-l">
+					物語を進めると王国を発展するための会議を行うことができる、仲間の提案を聞き、お金があれば実現することができるぞ。<br>提案は「キーホルダーを作りたい」「道場を建設したい」など様々。<br>物語を有利に進めるものばかりなのでどんどん実現していこう。
+				</p>
+				<p class="common-img">
+					<img src="./img/kaigi.jpg" alt="ざくざくアクターズのシステム2">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="chara-container">
+		<div class="container-row" style="width: 100%;">
+			<h2>キャラクター</h2>
+			<div class="common-box">
+			<!-- 1 -->			
+				<div class="chara-box">
+					<p class="chara-name">デーリッチ</p>
+					<p class="chara-img">
+						<img src="./img/chara/derich.png" alt="デーリッチ">
+					</p>
+					<p class="chara-text">
+						本作品の主人公で、肩書は「プリンセス」。<br> 
+						王国をつくることを夢見るハグレ召喚人。将来は左うちわの予定なんだとか。 <br>
+						語尾に「～でち」とつけてしゃべるのが口癖のようで、見た目通り子供らしさが目立つ明るい性格。 <br>
+						各地を転々とする長い放浪生活にうんざりしていており、世にあふれかえっているハグレ達を集め、
+						自分たちの居場所を作ろうとハグレ王国を建国することを目指す。 <br>
+						遺跡に落ちていたという初代召喚士が使っていたキーオブパンドラで魔法を使いこなす。 <br>
+						ローズマリーとは無二の親友で、彼女を心から信頼している。<br>
+					</p>
+				</div>
+				<!-- 2 -->
+				<div class="chara-box">
+					<p class="chara-name">ローズマリー</p>
+					<p class="chara-img">
+						<img src="./img/chara/rosemary.png" alt="ローズマリー">
+					</p>
+					<p class="chara-text">
+						肩書は「薬師」。序盤ゲームについて色々説明を行ってくれるのも彼女である。 <br>
+						デーリッチの親友で、魔法の才能もあるが薬ばっかり作ってる変な子らしい。<br>
+						とにかく博識・頭脳明晰で、戦闘アドバイスから地理解説、軍事・経理、さらに会議の進行役を務めるなど王国のまとめ役。 <br>
+						そのせいで度々ローズマリーが裏のボスだと思われることも。 <br>
+						デーリッチと比べ相手を疑いやすく、時には熱くなり相手に対し怒鳴ってしまうこともあり、 その度に自分の性格が厳しいのだろうかと悩んでしまう所もあるようだ。 <br>
+					</p>
+				</div>
+				<!-- 3 -->
+				<div class="chara-box">
+					<p class="chara-name">ベルベロス</p>
+					<p class="chara-img">
+						<img src="./img/chara/beruberos.png" alt="ベルベロス">
+					</p>
+					<p class="chara-text">
+						肩書は「ベロベロス」。ちょっと間抜けな顔だがかわいらしい三つ首で有名な地獄の番犬。<br> 
+						嫌われ逃げ続けていたところをデーリッチ一行と出会い、かわいいと言われたことででち子に懐く。<br> 
+						本来は人懐っこい種族だったが、ハグレへの迫害のせいで攻撃的になってしまっていたよう。 <br>
+						王国では番犬として入り口を守っている。他にも力になってくれるというが……？<br>
+					</p>
+				</div>
+			</div>
+			<div class="common-box">
+				<!-- 4 -->
+				<div class="chara-box">
+					<p class="chara-name">ハピコ</p>
+					<p class="chara-img">
+						<img src="./img/chara/hapiko.png" alt="ハピコ">
+					</p>
+					<p class="chara-text">
+						肩書は「ハーピー」。頭が切れて舌もよく回る、性悪娘。 <br> 
+						度重なる詐欺行為で山賊に襲われているところをデーリッチとローズマリーに救われる。 <br> 
+						常に逃げ回る生活をおくっていたようで、詐欺行為も生活費に困ったからだとか。 <br> 
+						ローズマリーいわく「本当にいい性格をしている」とのこと。たぶん別の意味で。 <br> 
+						王国では新しい商品を開発したり、お金を稼いで来たりしている。 <br> 
+						かなりの情報通で、またその能力を生かし相手陣地への偵察なども行うこともできる。 <br> 
+					</p>
+				</div>
+				<!-- 5 -->
+				<div class="chara-box">
+					<p class="chara-name">ニワカマッスル</p>
+					<p class="chara-img">
+						<img src="./img/chara/niwaka.png" alt="ニワカマッスル">
+					</p>
+					<p class="chara-text">
+						鉱山で働いていたミノタウロスのハグレ。 <br>
+						人の5倍は働いていたにもかかわらず待遇の悪さに腹を立て、 <br>
+						鉱山に幽霊が出たとのうわさを広めて人のいなくなった鉱山で一人で発掘作業をしていた。<br> 
+						一度はデーリッチ一行を幽霊と勘違いするものの、王国に興味を示し国民となる。 <br>
+						ちなみに王国の名前をつけたのは彼である。<br>
+						性格は見たまま単純元気タイプで優しく、男気にも溢れ、 <br>
+						王国内でのトラブルを進んで仲裁したりする頼れる兄貴分である。<br>
+					</p>
+				</div>
+				<!-- 6 -->
+				<div class="chara-box">
+					<p class="chara-name">福の神</p>
+					<p class="chara-img">
+						<img src="./img/chara/hukunokami.png" alt="福の神">
+					</p>
+					<p class="chara-text">
+						肩書きは「福の神」こちら側の世界に召喚されても福を配り歩いていた。 <br>
+						七福神という有名な神々の一柱であり、運を操る力を持つ。魔法使いとしても優秀。 <br>
+						放浪していたところ福が薄そうだと感じたハグレ王国に立ち寄り、そのまま仲間になる。 <br>
+						福の神というだけあって強運の持ち主。その運は麻雀をすると3回に1回はダブルリーチがかかるほどである。 <br>
+						露出が多いが福オーラで守られているため寒くない。<br>
+					</p>
+				</div>
+			</div>
+			<p class="chara-next">
+				この他にも30人以上の仲間が登場!!中には敵として倒さないと仲間にならないキャラクターも…
+			</p>
+		</div>	
+		<div class="common-box">
+			<a href="https://forest.watch.impress.co.jp/library/software/zakuzakuact/" class="download" target="_blank">
+				ダウンロードはこちらから
+			</a>
+			<a href="http://hamusuta.blog-rpg.com/" class="hamusuta-blog" target="_blank">
+				作者はむすたさんのブログはこちら
+			</a>
+		</div>
+	</div>
+</div>
+<div class="footer-wrapper">
+	<div class="footer-container">
+		<p class="author">
+			このページの作成者：メロット
+			<a href="https://twitter.com/melot_eve" target="_blank">Twitter</a>
+		</p>
+		<p class="back-to-top">
+			<a href="#">↑</a>
+		</p>
+	</div>
+</div>
+</body>
+</html>
